@@ -9,10 +9,10 @@ set :branch,"master"
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
 # Default deploy_to directory is /var/www/my_app_name
- set :deploy_to, '$HOME/deployed/#{fetch(:application)}'
+set :deploy_to, "$HOME/deployed/#{fetch(:application)}"
 
 # Default value for :scm is :git
- set :scm, :git
+set :scm, :git
 
 # Default value for :format is :airbrussh.
 # set :format, :airbrussh
@@ -36,19 +36,19 @@ set :branch,"master"
 # Default value for keep_releases is 5
 # set :keep_releases, 5
 namespace :deploy do
-desc "Build Docker Images"
-task :docker_build do
-on roles(:app) do
-execute "cd #{release_path} && docker build -t #{fetch(:application)} ."
-end
-end
+	desc "Build Docker Images"
+	task :docker_build do
+		on roles(:app) do
+			execute "cd #{release_path} && docker build -t #{fetch(:application)} ."
+		end
+	end
 
-  task :docker_run do
-on roles(:app) do
-    execute  "docker run --restart=always --name=#{fetch(:application )} -tdP #{fetch(:application)}"
-  end
-  
-end
-after:publishing, 'deploy:docker_build'
-  after:publishing, 'deploy:docker_run'
+  	task :docker_run do
+		on roles(:app) do
+    		execute  "docker run --name=#{fetch(:application)} -td -p 5000:5000 #{fetch(:application)}"
+  		end
+  	end
+
+	after:publishing, 'deploy:docker_build'
+  	after:publishing, 'deploy:docker_run'
 end

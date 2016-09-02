@@ -34,3 +34,487 @@
   INFO ---------------------------------------------------------------------------
   INFO [345f0a8c] Running /usr/bin/env mkdir -p /tmp as deploy@127.0.0.1
  DEBUG [345f0a8c] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-09-02 21:08:02 +0530 cap staging deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [bae121b4] Running /usr/bin/env mkdir -p /tmp on 127.0.0.1
+ DEBUG [bae121b4] Command: /usr/bin/env mkdir -p /tmp
+  INFO [bae121b4] Finished in 0.233 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-login_flask-staging-webonise.sh 0.0%
+  INFO Uploading /tmp/git-ssh-login_flask-staging-webonise.sh 100.0%
+  INFO [8aa919f1] Running /usr/bin/env chmod 700 /tmp/git-ssh-login_flask-staging-webonise.sh on 127.0.0.1
+ DEBUG [8aa919f1] Command: /usr/bin/env chmod 700 /tmp/git-ssh-login_flask-staging-webonise.sh
+  INFO [8aa919f1] Finished in 0.007 seconds with exit status 0 (successful).
+  INFO [68d5b35f] Running /usr/bin/env git ls-remote --heads git@github.com:mayuria-webonise/flask_login.git on 127.0.0.1
+ DEBUG [68d5b35f] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-login_flask-staging-webonise.sh" ; /usr/bin/env git ls-remote --heads git@github.com:mayuria-webonise/flask_login.git )
+ DEBUG [68d5b35f] 	e4ad5402f1315e8c29a424b639923623495d18f4	refs/heads/master
+  INFO [68d5b35f] Finished in 4.016 seconds with exit status 0 (successful).
+  INFO [fc4adfa1] Running /usr/bin/env mkdir -p $HOME/deployed/#{fetch(:application)}/shared $HOME/deployed/#{fetch(:application)}/releases on 127.0.0.1
+ DEBUG [fc4adfa1] Command: /usr/bin/env mkdir -p $HOME/deployed/#{fetch(:application)}/shared $HOME/deployed/#{fetch(:application)}/releases
+ DEBUG [fc4adfa1] 	bash: -c: line 0: syntax error near unexpected token `('
+ DEBUG [fc4adfa1] 	bash: -c: line 0: `/usr/bin/env mkdir -p $HOME/deployed/#{fetch(:application)}/shared $HOME/deployed/#{fetch(:application)}/releases'
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-09-02 21:09:43 +0530 cap staging deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [e6565b42] Running /usr/bin/env mkdir -p /tmp on 127.0.0.1
+ DEBUG [e6565b42] Command: /usr/bin/env mkdir -p /tmp
+  INFO [e6565b42] Finished in 0.216 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-login_flask-staging-webonise.sh 0.0%
+  INFO Uploading /tmp/git-ssh-login_flask-staging-webonise.sh 100.0%
+  INFO [07d84e99] Running /usr/bin/env chmod 700 /tmp/git-ssh-login_flask-staging-webonise.sh on 127.0.0.1
+ DEBUG [07d84e99] Command: /usr/bin/env chmod 700 /tmp/git-ssh-login_flask-staging-webonise.sh
+  INFO [07d84e99] Finished in 0.004 seconds with exit status 0 (successful).
+  INFO [f31f0676] Running /usr/bin/env git ls-remote --heads git@github.com:mayuria-webonise/flask_login.git on 127.0.0.1
+ DEBUG [f31f0676] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-login_flask-staging-webonise.sh" ; /usr/bin/env git ls-remote --heads git@github.com:mayuria-webonise/flask_login.git )
+ DEBUG [f31f0676] 	e4ad5402f1315e8c29a424b639923623495d18f4	refs/heads/master
+  INFO [f31f0676] Finished in 3.411 seconds with exit status 0 (successful).
+  INFO [08f11ae1] Running /usr/bin/env mkdir -p $HOME/deployed/#{fetch(:application)}/shared $HOME/deployed/#{fetch(:application)}/releases on 127.0.0.1
+ DEBUG [08f11ae1] Command: /usr/bin/env mkdir -p $HOME/deployed/#{fetch(:application)}/shared $HOME/deployed/#{fetch(:application)}/releases
+ DEBUG [08f11ae1] 	bash: -c: line 0: syntax error near unexpected token `('
+bash: -c: line 0: `/usr/bin/env mkdir -p $HOME/deployed/#{fetch(:application)}/shared $HOME/deployed/#{fetch(:application)}/releases'
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-09-02 21:11:56 +0530 cap staging deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [a7dc6094] Running /usr/bin/env mkdir -p /tmp on 127.0.0.1
+ DEBUG [a7dc6094] Command: /usr/bin/env mkdir -p /tmp
+  INFO [a7dc6094] Finished in 0.202 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-login_flask-staging-webonise.sh 0.0%
+  INFO Uploading /tmp/git-ssh-login_flask-staging-webonise.sh 100.0%
+  INFO [af8d2662] Running /usr/bin/env chmod 700 /tmp/git-ssh-login_flask-staging-webonise.sh on 127.0.0.1
+ DEBUG [af8d2662] Command: /usr/bin/env chmod 700 /tmp/git-ssh-login_flask-staging-webonise.sh
+  INFO [af8d2662] Finished in 0.005 seconds with exit status 0 (successful).
+  INFO [5bf9b5a4] Running /usr/bin/env git ls-remote --heads git@github.com:mayuria-webonise/flask_login.git on 127.0.0.1
+ DEBUG [5bf9b5a4] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-login_flask-staging-webonise.sh" ; /usr/bin/env git ls-remote --heads git@github.com:mayuria-webonise/flask_login.git )
+ DEBUG [5bf9b5a4] 	e4ad5402f1315e8c29a424b639923623495d18f4	refs/heads/master
+  INFO [5bf9b5a4] Finished in 3.236 seconds with exit status 0 (successful).
+  INFO [8b6b4d25] Running /usr/bin/env mkdir -p $HOME/deployed/login_flask/shared $HOME/deployed/login_flask/releases on 127.0.0.1
+ DEBUG [8b6b4d25] Command: /usr/bin/env mkdir -p $HOME/deployed/login_flask/shared $HOME/deployed/login_flask/releases
+  INFO [8b6b4d25] Finished in 0.009 seconds with exit status 0 (successful).
+ DEBUG [d44ef1e0] Running [ -f $HOME/deployed/login_flask/current/REVISION ] on 127.0.0.1
+ DEBUG [d44ef1e0] Command: [ -f $HOME/deployed/login_flask/current/REVISION ]
+ DEBUG [d44ef1e0] Finished in 0.006 seconds with exit status 1 (failed).
+ DEBUG [e637e620] Running [ -f $HOME/deployed/login_flask/repo/HEAD ] on 127.0.0.1
+ DEBUG [e637e620] Command: [ -f $HOME/deployed/login_flask/repo/HEAD ]
+ DEBUG [e637e620] Finished in 0.008 seconds with exit status 1 (failed).
+ DEBUG [504bb8a2] Running if test ! -d $HOME/deployed/login_flask; then echo "Directory does not exist '$HOME/deployed/login_flask'" 1>&2; false; fi on 127.0.0.1
+ DEBUG [504bb8a2] Command: if test ! -d $HOME/deployed/login_flask; then echo "Directory does not exist '$HOME/deployed/login_flask'" 1>&2; false; fi
+ DEBUG [504bb8a2] Finished in 0.009 seconds with exit status 0 (successful).
+  INFO [7158f509] Running /usr/bin/env git clone --mirror git@github.com:mayuria-webonise/flask_login.git $HOME/deployed/login_flask/repo on 127.0.0.1
+ DEBUG [7158f509] Command: cd $HOME/deployed/login_flask && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-login_flask-staging-webonise.sh" ; /usr/bin/env git clone --mirror git@github.com:mayuria-webonise/flask_login.git $HOME/deployed/login_flask/repo )
+ DEBUG [7158f509] 	Cloning into bare repository '/home/webonise/deployed/login_flask/repo'...
+  INFO [7158f509] Finished in 6.633 seconds with exit status 0 (successful).
+ DEBUG [0ecbc423] Running if test ! -d $HOME/deployed/login_flask/repo; then echo "Directory does not exist '$HOME/deployed/login_flask/repo'" 1>&2; false; fi on 127.0.0.1
+ DEBUG [0ecbc423] Command: if test ! -d $HOME/deployed/login_flask/repo; then echo "Directory does not exist '$HOME/deployed/login_flask/repo'" 1>&2; false; fi
+ DEBUG [0ecbc423] Finished in 0.006 seconds with exit status 0 (successful).
+  INFO [4c2722e1] Running /usr/bin/env git remote update --prune on 127.0.0.1
+ DEBUG [4c2722e1] Command: cd $HOME/deployed/login_flask/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-login_flask-staging-webonise.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [4c2722e1] 	Fetching origin
+  INFO [4c2722e1] Finished in 3.190 seconds with exit status 0 (successful).
+ DEBUG [6bb0aad4] Running if test ! -d $HOME/deployed/login_flask/repo; then echo "Directory does not exist '$HOME/deployed/login_flask/repo'" 1>&2; false; fi on 127.0.0.1
+ DEBUG [6bb0aad4] Command: if test ! -d $HOME/deployed/login_flask/repo; then echo "Directory does not exist '$HOME/deployed/login_flask/repo'" 1>&2; false; fi
+ DEBUG [6bb0aad4] Finished in 0.006 seconds with exit status 0 (successful).
+  INFO [5cac8925] Running /usr/bin/env mkdir -p $HOME/deployed/login_flask/releases/20160902154200 on 127.0.0.1
+ DEBUG [5cac8925] Command: cd $HOME/deployed/login_flask/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-login_flask-staging-webonise.sh" ; /usr/bin/env mkdir -p $HOME/deployed/login_flask/releases/20160902154200 )
+  INFO [5cac8925] Finished in 0.009 seconds with exit status 0 (successful).
+  INFO [1753fe8a] Running /usr/bin/env git archive master | tar -x -f - -C $HOME/deployed/login_flask/releases/20160902154200 on 127.0.0.1
+ DEBUG [1753fe8a] Command: cd $HOME/deployed/login_flask/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-login_flask-staging-webonise.sh" ; /usr/bin/env git archive master | tar -x -f - -C $HOME/deployed/login_flask/releases/20160902154200 )
+  INFO [1753fe8a] Finished in 0.041 seconds with exit status 0 (successful).
+ DEBUG [6abcc93c] Running if test ! -d $HOME/deployed/login_flask/repo; then echo "Directory does not exist '$HOME/deployed/login_flask/repo'" 1>&2; false; fi on 127.0.0.1
+ DEBUG [6abcc93c] Command: if test ! -d $HOME/deployed/login_flask/repo; then echo "Directory does not exist '$HOME/deployed/login_flask/repo'" 1>&2; false; fi
+ DEBUG [6abcc93c] Finished in 0.005 seconds with exit status 0 (successful).
+ DEBUG [d9372357] Running /usr/bin/env git rev-list --max-count=1 master on 127.0.0.1
+ DEBUG [d9372357] Command: cd $HOME/deployed/login_flask/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-login_flask-staging-webonise.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [d9372357] 	e4ad5402f1315e8c29a424b639923623495d18f4
+ DEBUG [d9372357] Finished in 0.018 seconds with exit status 0 (successful).
+ DEBUG [457ccff2] Running if test ! -d $HOME/deployed/login_flask/releases/20160902154200; then echo "Directory does not exist '$HOME/deployed/login_flask/releases/20160902154200'" 1>&2; false; fi on 127.0.0.1
+ DEBUG [457ccff2] Command: if test ! -d $HOME/deployed/login_flask/releases/20160902154200; then echo "Directory does not exist '$HOME/deployed/login_flask/releases/20160902154200'" 1>&2; false; fi
+ DEBUG [457ccff2] Finished in 0.007 seconds with exit status 0 (successful).
+  INFO [2d3fd900] Running /usr/bin/env echo "e4ad5402f1315e8c29a424b639923623495d18f4" >> REVISION on 127.0.0.1
+ DEBUG [2d3fd900] Command: cd $HOME/deployed/login_flask/releases/20160902154200 && /usr/bin/env echo "e4ad5402f1315e8c29a424b639923623495d18f4" >> REVISION
+  INFO [2d3fd900] Finished in 0.022 seconds with exit status 0 (successful).
+  INFO [c1403533] Running /usr/bin/env ln -s $HOME/deployed/login_flask/releases/20160902154200 $HOME/deployed/login_flask/releases/current on 127.0.0.1
+ DEBUG [c1403533] Command: /usr/bin/env ln -s $HOME/deployed/login_flask/releases/20160902154200 $HOME/deployed/login_flask/releases/current
+  INFO [c1403533] Finished in 0.012 seconds with exit status 0 (successful).
+  INFO [8ac8d83e] Running /usr/bin/env mv $HOME/deployed/login_flask/releases/current $HOME/deployed/login_flask on 127.0.0.1
+ DEBUG [8ac8d83e] Command: /usr/bin/env mv $HOME/deployed/login_flask/releases/current $HOME/deployed/login_flask
+  INFO [8ac8d83e] Finished in 0.007 seconds with exit status 0 (successful).
+  INFO [5114a319] Running cd $HOME/deployed/login_flask/releases/20160902154200 && docker build -t login_flask . on 127.0.0.1
+ DEBUG [5114a319] Command: cd $HOME/deployed/login_flask/releases/20160902154200 && docker build -t login_flask .
+ DEBUG [5114a319] 	Sending build context to Docker daemon 23.55 kB
+ DEBUG [5114a319] 	Step 1 : FROM ubuntu:14.04
+ ---> 4a725d3b3b1c
+ DEBUG [5114a319] 	Step 2 : RUN apt-get update && sudo apt-get install -y 								python-pip 								 python 								 mongodb
+ ---> Using cache
+ ---> da3bca37004a
+Step 3 : COPY . /app
+ DEBUG [5114a319] 	 ---> c76b3281e74a
+ DEBUG [5114a319] 	Removing intermediate container 9e14121d07ad
+Step 4 : WORKDIR /app
+ DEBUG [5114a319] 	 ---> Running in 6a8a02a5b6c9
+ DEBUG [5114a319] 	 ---> e06fc6178d70
+ DEBUG [5114a319] 	Removing intermediate container 6a8a02a5b6c9
+Step 5 : RUN pip install -r requirements.txt
+ DEBUG [5114a319] 	 ---> Running in cf4baa5e0da3
+ DEBUG [5114a319] 	Downloading/unpacking click==6.6 (from -r requirements.txt (line 1))
+ DEBUG [5114a319] 	  Running setup.py (path:/tmp/pip_build_root/click/setup.py) egg_info for package click
+ DEBUG [5114a319] 	    
+ DEBUG [5114a319] 	    warning: no previously-included files matching '*.pyc' found under directory 'docs'
+ DEBUG [5114a319] 	    warning: no previously-included files matching '*.pyo' found under directory 'docs'
+ DEBUG [5114a319] 	    warning: no previously-included files matching '*.pyc' found under directory 'tests'
+ DEBUG [5114a319] 	    warning: no previously-included files matching '*.pyo' found under directory 'tests'
+ DEBUG [5114a319] 	    warning: no previously-included files matching '*.pyc' found under directory 'examples'
+ DEBUG [5114a319] 	    warning: no previously-included files matching '*.pyo' found under directory 'examples'
+ DEBUG [5114a319] 	    no previously-included directories found matching 'docs/_build'
+ DEBUG [5114a319] 	Downloading/unpacking Flask==0.11.1 (from -r requirements.txt (line 2))
+ DEBUG [5114a319] 	Downloading/unpacking itsdangerous==0.24 (from -r requirements.txt (line 3))
+ DEBUG [5114a319] 	  Running setup.py (path:/tmp/pip_build_root/itsdangerous/setup.py) egg_info for package itsdangerous
+ DEBUG [5114a319] 	    
+ DEBUG [5114a319] 	    warning: no previously-included files matching '*' found under directory 'docs/_build'
+ DEBUG [5114a319] 	Downloading/unpacking Jinja2==2.8 (from -r requirements.txt (line 4))
+ DEBUG [5114a319] 	Downloading/unpacking MarkupSafe==0.23 (from -r requirements.txt (line 5))
+ DEBUG [5114a319] 	  Downloading MarkupSafe-0.23.tar.gz
+ DEBUG [5114a319] 	  Running setup.py (path:/tmp/pip_build_root/MarkupSafe/setup.py) egg_info for package MarkupSafe
+ DEBUG [5114a319] 	    
+ DEBUG [5114a319] 	Downloading/unpacking pymongo==3.3.0 (from -r requirements.txt (line 6))
+ DEBUG [5114a319] 	  Running setup.py (path:/tmp/pip_build_root/pymongo/setup.py) egg_info for package pymongo
+ DEBUG [5114a319] 	    
+ DEBUG [5114a319] 	Downloading/unpacking Werkzeug==0.11.11 (from -r requirements.txt (line 7))
+ DEBUG [5114a319] 	Installing collected packages: click, Flask, itsdangerous, Jinja2, MarkupSafe, pymongo, Werkzeug
+  Running setup.py install for click
+ DEBUG [5114a319] 	    
+ DEBUG [5114a319] 	    warning: no previously-included files matching '*.pyc' found under directory 'docs'
+    warning: no previously-included files matching '*.pyo' found under directory 'docs'
+ DEBUG [5114a319] 	    warning: no previously-included files matching '*.pyc' found under directory 'tests'
+    warning: no previously-included files matching '*.pyo' found under directory 'tests'
+ DEBUG [5114a319] 	    warning: no previously-included files matching '*.pyc' found under directory 'examples'
+ DEBUG [5114a319] 	    warning: no previously-included files matching '*.pyo' found under directory 'examples'
+ DEBUG [5114a319] 	    no previously-included directories found matching 'docs/_build'
+ DEBUG [5114a319] 	  Running setup.py install for itsdangerous
+ DEBUG [5114a319] 	    
+ DEBUG [5114a319] 	    warning: no previously-included files matching '*' found under directory 'docs/_build'
+ DEBUG [5114a319] 	  Running setup.py install for MarkupSafe
+ DEBUG [5114a319] 	    
+ DEBUG [5114a319] 	    building 'markupsafe._speedups' extension
+ DEBUG [5114a319] 	    x86_64-linux-gnu-gcc -pthread -fno-strict-aliasing -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -fPIC -I/usr/include/python2.7 -c markupsafe/_speedups.c -o build/temp.linux-x86_64-2.7/markupsafe/_speedups.o
+ DEBUG [5114a319] 	    markupsafe/_speedups.c:12:20: fatal error: Python.h: No such file or directory
+     #include <Python.h>
+                        ^
+    compilation terminated.
+ DEBUG [5114a319] 	    ==========================================================================
+    WARNING: The C extension could not be compiled, speedups are not enabled.
+    Failure information, if any, is above.
+ DEBUG [5114a319] 	    Retrying the build without the C extension now.
+    
+ DEBUG [5114a319] 	    
+ DEBUG [5114a319] 	    ==========================================================================
+ DEBUG [5114a319] 	    WARNING: The C extension could not be compiled, speedups are not enabled.
+ DEBUG [5114a319] 	    Plain-Python installation succeeded.
+ DEBUG [5114a319] 	    ==========================================================================
+ DEBUG [5114a319] 	  Running setup.py install for pymongo
+ DEBUG [5114a319] 	    building 'bson._cbson' extension
+ DEBUG [5114a319] 	    x86_64-linux-gnu-gcc -pthread -fno-strict-aliasing -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -fPIC -Ibson -I/usr/include/python2.7 -c bson/_cbsonmodule.c -o build/temp.linux-x86_64-2.7/bson/_cbsonmodule.o
+ DEBUG [5114a319] 	    bson/_cbsonmodule.c:23:20: fatal error: Python.h: No such file or directory
+     #include "Python.h"
+                        ^
+    compilation terminated.
+ DEBUG [5114a319] 	    /tmp/pip_build_root/pymongo/setup.py:225: UserWarning:
+    ********************************************************************
+    WARNING: The bson._cbson extension module could not
+    be compiled. No C extensions are essential for PyMongo to run,
+    although they do result in significant speed improvements.
+    The output above this warning shows how the compilation failed.
+ DEBUG [5114a319] 	    
+    Please see the installation docs for solutions to build issues:
+    
+    http://api.mongodb.org/python/current/installation.html
+    
+    Here are some hints for popular operating systems:
+ DEBUG [5114a319] 	    
+    If you are seeing this message on Linux you probably need to
+ DEBUG [5114a319] 	    install GCC and/or the Python development package for your
+    version of Python.
+ DEBUG [5114a319] 	    
+    Debian and Ubuntu users should issue the following command:
+ DEBUG [5114a319] 	    
+ DEBUG [5114a319] 	        $ sudo apt-get install build-essential python-dev
+ DEBUG [5114a319] 	    
+ DEBUG [5114a319] 	    Users of Red Hat based distributions (RHEL, CentOS, Amazon Linux,
+ DEBUG [5114a319] 	    Oracle Linux, Fedora, etc.) should issue the following command:
+ DEBUG [5114a319] 	    
+ DEBUG [5114a319] 	        $ sudo yum install gcc python-devel
+ DEBUG [5114a319] 	    
+ DEBUG [5114a319] 	    If you are seeing this message on Microsoft Windows please install
+ DEBUG [5114a319] 	    PyMongo using the MS Windows installer for your version of Python,
+    available on pypi here:
+    
+ DEBUG [5114a319] 	    http://pypi.python.org/pypi/pymongo/#downloads
+    
+    If you are seeing this message on OSX please read the documentation
+ DEBUG [5114a319] 	    here:
+    
+    http://api.mongodb.org/python/current/installation.html#osx
+    ********************************************************************
+    
+ DEBUG [5114a319] 	      "The output above "
+    command 'x86_64-linux-gnu-gcc' failed with exit status 1
+    building 'pymongo._cmessage' extension
+ DEBUG [5114a319] 	    x86_64-linux-gnu-gcc -pthread -fno-strict-aliasing -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -fPIC -Ibson -I/usr/include/python2.7 -c pymongo/_cmessagemodule.c -o build/temp.linux-x86_64-2.7/pymongo/_cmessagemodule.o
+ DEBUG [5114a319] 	    pymongo/_cmessagemodule.c:23:20: fatal error: Python.h: No such file or directory
+     #include "Python.h"
+                        ^
+    compilation terminated.
+ DEBUG [5114a319] 	    /tmp/pip_build_root/pymongo/setup.py:225: UserWarning:
+    ********************************************************************
+    WARNING: The pymongo._cmessage extension module could not
+    be compiled. No C extensions are essential for PyMongo to run,
+    although they do result in significant speed improvements.
+ DEBUG [5114a319] 	    The output above this warning shows how the compilation failed.
+    
+ DEBUG [5114a319] 	    Please see the installation docs for solutions to build issues:
+    
+ DEBUG [5114a319] 	    http://api.mongodb.org/python/current/installation.html
+    
+ DEBUG [5114a319] 	    Here are some hints for popular operating systems:
+    
+ DEBUG [5114a319] 	    If you are seeing this message on Linux you probably need to
+ DEBUG [5114a319] 	    install GCC and/or the Python development package for your
+    version of Python.
+ DEBUG [5114a319] 	    
+    Debian and Ubuntu users should issue the following command:
+ DEBUG [5114a319] 	    
+        $ sudo apt-get install build-essential python-dev
+ DEBUG [5114a319] 	    
+ DEBUG [5114a319] 	    Users of Red Hat based distributions (RHEL, CentOS, Amazon Linux,
+ DEBUG [5114a319] 	    Oracle Linux, Fedora, etc.) should issue the following command:
+ DEBUG [5114a319] 	    
+ DEBUG [5114a319] 	        $ sudo yum install gcc python-devel
+ DEBUG [5114a319] 	    
+ DEBUG [5114a319] 	    If you are seeing this message on Microsoft Windows please install
+ DEBUG [5114a319] 	    PyMongo using the MS Windows installer for your version of Python,
+ DEBUG [5114a319] 	    available on pypi here:
+ DEBUG [5114a319] 	    
+ DEBUG [5114a319] 	    http://pypi.python.org/pypi/pymongo/#downloads
+ DEBUG [5114a319] 	    
+ DEBUG [5114a319] 	    If you are seeing this message on OSX please read the documentation
+ DEBUG [5114a319] 	    here:
+ DEBUG [5114a319] 	    
+ DEBUG [5114a319] 	    http://api.mongodb.org/python/current/installation.html#osx
+ DEBUG [5114a319] 	    ********************************************************************
+ DEBUG [5114a319] 	    
+ DEBUG [5114a319] 	      "The output above "
+ DEBUG [5114a319] 	    command 'x86_64-linux-gnu-gcc' failed with exit status 1
+ DEBUG [5114a319] 	    
+ DEBUG [5114a319] 	Successfully installed click Flask itsdangerous Jinja2 MarkupSafe pymongo Werkzeug
+Cleaning up...
+ DEBUG [5114a319] 	 ---> 54a7781383eb
+ DEBUG [5114a319] 	Removing intermediate container cf4baa5e0da3
+Step 6 : ENTRYPOINT python
+ DEBUG [5114a319] 	 ---> Running in 544bc5d8b2ad
+ DEBUG [5114a319] 	 ---> 5d6452f9de88
+ DEBUG [5114a319] 	Removing intermediate container 544bc5d8b2ad
+Step 7 : CMD app.py
+ DEBUG [5114a319] 	 ---> Running in 2c00af5acf69
+ DEBUG [5114a319] 	 ---> 7376a8247e2e
+ DEBUG [5114a319] 	Removing intermediate container 2c00af5acf69
+ DEBUG [5114a319] 	Successfully built 7376a8247e2e
+  INFO [5114a319] Finished in 48.606 seconds with exit status 0 (successful).
+  INFO [aa263a8e] Running docker run --restart=always --name=login_flask -tdP login_flask on 127.0.0.1
+ DEBUG [aa263a8e] Command: docker run --restart=always --name=login_flask -tdP login_flask
+ DEBUG [aa263a8e] 	8e8620771140ce7348d8d30d86b5270e0f6e406d43d6173d0f6f67fd1328c507
+  INFO [aa263a8e] Finished in 0.705 seconds with exit status 0 (successful).
+ DEBUG [abfa57c1] Running /usr/bin/env ls -xtr $HOME/deployed/login_flask/releases on 127.0.0.1
+ DEBUG [abfa57c1] Command: /usr/bin/env ls -xtr $HOME/deployed/login_flask/releases
+ DEBUG [abfa57c1] 	20160902154200
+ DEBUG [abfa57c1] Finished in 0.006 seconds with exit status 0 (successful).
+ DEBUG [2cf91b49] Running if test ! -d $HOME/deployed/login_flask/releases; then echo "Directory does not exist '$HOME/deployed/login_flask/releases'" 1>&2; false; fi on 127.0.0.1
+ DEBUG [2cf91b49] Command: if test ! -d $HOME/deployed/login_flask/releases; then echo "Directory does not exist '$HOME/deployed/login_flask/releases'" 1>&2; false; fi
+ DEBUG [2cf91b49] Finished in 0.020 seconds with exit status 0 (successful).
+  INFO [b7c80adc] Running /usr/bin/env echo "Branch master (at e4ad5402f1315e8c29a424b639923623495d18f4) deployed as release 20160902154200 by webonise" >> $HOME/deployed/login_flask/revisions.log on 127.0.0.1
+ DEBUG [b7c80adc] Command: cd $HOME/deployed/login_flask/releases && /usr/bin/env echo "Branch master (at e4ad5402f1315e8c29a424b639923623495d18f4) deployed as release 20160902154200 by webonise" >> $HOME/deployed/login_flask/revisions.log
+  INFO [b7c80adc] Finished in 0.009 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-09-02 21:14:20 +0530 cap staging deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [cf717c02] Running /usr/bin/env mkdir -p /tmp on 127.0.0.1
+ DEBUG [cf717c02] Command: /usr/bin/env mkdir -p /tmp
+  INFO [cf717c02] Finished in 0.229 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-login_flask-staging-webonise.sh 0.0%
+  INFO Uploading /tmp/git-ssh-login_flask-staging-webonise.sh 100.0%
+  INFO [4efae168] Running /usr/bin/env chmod 700 /tmp/git-ssh-login_flask-staging-webonise.sh on 127.0.0.1
+ DEBUG [4efae168] Command: /usr/bin/env chmod 700 /tmp/git-ssh-login_flask-staging-webonise.sh
+  INFO [4efae168] Finished in 0.009 seconds with exit status 0 (successful).
+  INFO [23e06c8d] Running /usr/bin/env git ls-remote --heads git@github.com:mayuria-webonise/flask_login.git on 127.0.0.1
+ DEBUG [23e06c8d] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-login_flask-staging-webonise.sh" ; /usr/bin/env git ls-remote --heads git@github.com:mayuria-webonise/flask_login.git )
+ DEBUG [23e06c8d] 	e4ad5402f1315e8c29a424b639923623495d18f4	refs/heads/master
+  INFO [23e06c8d] Finished in 3.240 seconds with exit status 0 (successful).
+  INFO [00fbeaef] Running /usr/bin/env mkdir -p $HOME/deployed/login_flask/shared $HOME/deployed/login_flask/releases on 127.0.0.1
+ DEBUG [00fbeaef] Command: /usr/bin/env mkdir -p $HOME/deployed/login_flask/shared $HOME/deployed/login_flask/releases
+  INFO [00fbeaef] Finished in 0.010 seconds with exit status 0 (successful).
+ DEBUG [c8f95a23] Running [ -f $HOME/deployed/login_flask/current/REVISION ] on 127.0.0.1
+ DEBUG [c8f95a23] Command: [ -f $HOME/deployed/login_flask/current/REVISION ]
+ DEBUG [c8f95a23] Finished in 0.008 seconds with exit status 0 (successful).
+ DEBUG [0e40d7cf] Running /usr/bin/env cat $HOME/deployed/login_flask/current/REVISION 2>/dev/null on 127.0.0.1
+ DEBUG [0e40d7cf] Command: /usr/bin/env cat $HOME/deployed/login_flask/current/REVISION 2>/dev/null
+ DEBUG [0e40d7cf] 	e4ad5402f1315e8c29a424b639923623495d18f4
+ DEBUG [0e40d7cf] Finished in 0.008 seconds with exit status 0 (successful).
+ DEBUG [b907fa71] Running [ -f $HOME/deployed/login_flask/repo/HEAD ] on 127.0.0.1
+ DEBUG [b907fa71] Command: [ -f $HOME/deployed/login_flask/repo/HEAD ]
+ DEBUG [b907fa71] Finished in 0.008 seconds with exit status 0 (successful).
+  INFO The repository mirror is at $HOME/deployed/login_flask/repo
+ DEBUG [0b44301a] Running if test ! -d $HOME/deployed/login_flask/repo; then echo "Directory does not exist '$HOME/deployed/login_flask/repo'" 1>&2; false; fi on 127.0.0.1
+ DEBUG [0b44301a] Command: if test ! -d $HOME/deployed/login_flask/repo; then echo "Directory does not exist '$HOME/deployed/login_flask/repo'" 1>&2; false; fi
+ DEBUG [0b44301a] Finished in 0.007 seconds with exit status 0 (successful).
+  INFO [f135565e] Running /usr/bin/env git remote update --prune on 127.0.0.1
+ DEBUG [f135565e] Command: cd $HOME/deployed/login_flask/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-login_flask-staging-webonise.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [f135565e] 	Fetching origin
+  INFO [f135565e] Finished in 3.239 seconds with exit status 0 (successful).
+ DEBUG [69af260b] Running if test ! -d $HOME/deployed/login_flask/repo; then echo "Directory does not exist '$HOME/deployed/login_flask/repo'" 1>&2; false; fi on 127.0.0.1
+ DEBUG [69af260b] Command: if test ! -d $HOME/deployed/login_flask/repo; then echo "Directory does not exist '$HOME/deployed/login_flask/repo'" 1>&2; false; fi
+ DEBUG [69af260b] Finished in 0.006 seconds with exit status 0 (successful).
+  INFO [77b23437] Running /usr/bin/env mkdir -p $HOME/deployed/login_flask/releases/20160902154424 on 127.0.0.1
+ DEBUG [77b23437] Command: cd $HOME/deployed/login_flask/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-login_flask-staging-webonise.sh" ; /usr/bin/env mkdir -p $HOME/deployed/login_flask/releases/20160902154424 )
+  INFO [77b23437] Finished in 0.008 seconds with exit status 0 (successful).
+  INFO [0751b8e0] Running /usr/bin/env git archive master | tar -x -f - -C $HOME/deployed/login_flask/releases/20160902154424 on 127.0.0.1
+ DEBUG [0751b8e0] Command: cd $HOME/deployed/login_flask/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-login_flask-staging-webonise.sh" ; /usr/bin/env git archive master | tar -x -f - -C $HOME/deployed/login_flask/releases/20160902154424 )
+  INFO [0751b8e0] Finished in 0.009 seconds with exit status 0 (successful).
+ DEBUG [70dd0a9b] Running if test ! -d $HOME/deployed/login_flask/repo; then echo "Directory does not exist '$HOME/deployed/login_flask/repo'" 1>&2; false; fi on 127.0.0.1
+ DEBUG [70dd0a9b] Command: if test ! -d $HOME/deployed/login_flask/repo; then echo "Directory does not exist '$HOME/deployed/login_flask/repo'" 1>&2; false; fi
+ DEBUG [70dd0a9b] Finished in 0.007 seconds with exit status 0 (successful).
+ DEBUG [1d92d981] Running /usr/bin/env git rev-list --max-count=1 master on 127.0.0.1
+ DEBUG [1d92d981] Command: cd $HOME/deployed/login_flask/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-login_flask-staging-webonise.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [1d92d981] 	e4ad5402f1315e8c29a424b639923623495d18f4
+ DEBUG [1d92d981] Finished in 0.010 seconds with exit status 0 (successful).
+ DEBUG [b538bc60] Running if test ! -d $HOME/deployed/login_flask/releases/20160902154424; then echo "Directory does not exist '$HOME/deployed/login_flask/releases/20160902154424'" 1>&2; false; fi on 127.0.0.1
+ DEBUG [b538bc60] Command: if test ! -d $HOME/deployed/login_flask/releases/20160902154424; then echo "Directory does not exist '$HOME/deployed/login_flask/releases/20160902154424'" 1>&2; false; fi
+ DEBUG [b538bc60] Finished in 0.004 seconds with exit status 0 (successful).
+  INFO [42777385] Running /usr/bin/env echo "e4ad5402f1315e8c29a424b639923623495d18f4" >> REVISION on 127.0.0.1
+ DEBUG [42777385] Command: cd $HOME/deployed/login_flask/releases/20160902154424 && /usr/bin/env echo "e4ad5402f1315e8c29a424b639923623495d18f4" >> REVISION
+  INFO [42777385] Finished in 0.007 seconds with exit status 0 (successful).
+  INFO [520f9538] Running /usr/bin/env ln -s $HOME/deployed/login_flask/releases/20160902154424 $HOME/deployed/login_flask/releases/current on 127.0.0.1
+ DEBUG [520f9538] Command: /usr/bin/env ln -s $HOME/deployed/login_flask/releases/20160902154424 $HOME/deployed/login_flask/releases/current
+  INFO [520f9538] Finished in 0.008 seconds with exit status 0 (successful).
+  INFO [3c7e6b69] Running /usr/bin/env mv $HOME/deployed/login_flask/releases/current $HOME/deployed/login_flask on 127.0.0.1
+ DEBUG [3c7e6b69] Command: /usr/bin/env mv $HOME/deployed/login_flask/releases/current $HOME/deployed/login_flask
+  INFO [3c7e6b69] Finished in 0.008 seconds with exit status 0 (successful).
+  INFO [5fc3312b] Running cd $HOME/deployed/login_flask/releases/20160902154424 && docker build -t login_flask . on 127.0.0.1
+ DEBUG [5fc3312b] Command: cd $HOME/deployed/login_flask/releases/20160902154424 && docker build -t login_flask .
+ DEBUG [5fc3312b] 	Sending build context to Docker daemon 23.55 kB
+ DEBUG [5fc3312b] 	Step 1 : FROM ubuntu:14.04
+ DEBUG [5fc3312b] 	 ---> 4a725d3b3b1c
+ DEBUG [5fc3312b] 	Step 2 : RUN apt-get update && sudo apt-get install -y 								python-pip 								 python 								 mongodb
+ DEBUG [5fc3312b] 	 ---> Using cache
+ ---> da3bca37004a
+ DEBUG [5fc3312b] 	Step 3 : COPY . /app
+ ---> Using cache
+ ---> c76b3281e74a
+ DEBUG [5fc3312b] 	Step 4 : WORKDIR /app
+ ---> Using cache
+ ---> e06fc6178d70
+Step 5 : RUN pip install -r requirements.txt
+ ---> Using cache
+ ---> 54a7781383eb
+Step 6 : ENTRYPOINT python
+ DEBUG [5fc3312b] 	 ---> Using cache
+ ---> 5d6452f9de88
+ DEBUG [5fc3312b] 	Step 7 : CMD app.py
+ ---> Using cache
+ DEBUG [5fc3312b] 	 ---> 7376a8247e2e
+ DEBUG [5fc3312b] 	Successfully built 7376a8247e2e
+  INFO [5fc3312b] Finished in 0.125 seconds with exit status 0 (successful).
+  INFO [988bd03b] Running docker run --restart=always --name=login_flask -td -p 5000:5000 login_flask on 127.0.0.1
+ DEBUG [988bd03b] Command: docker run --restart=always --name=login_flask -td -p 5000:5000 login_flask
+ DEBUG [988bd03b] 	docker: Error response from daemon: Conflict. The name "/login_flask" is already in use by container 8e8620771140ce7348d8d30d86b5270e0f6e406d43d6173d0f6f67fd1328c507. You have to remove (or rename) that container to be able to reuse that name..
+See 'docker run --help'.
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-09-02 21:15:20 +0530 cap staging deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [42f9fa54] Running /usr/bin/env mkdir -p /tmp on 127.0.0.1
+ DEBUG [42f9fa54] Command: /usr/bin/env mkdir -p /tmp
+  INFO [42f9fa54] Finished in 0.205 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-login_flask-staging-webonise.sh 0.0%
+  INFO Uploading /tmp/git-ssh-login_flask-staging-webonise.sh 100.0%
+  INFO [4389999e] Running /usr/bin/env chmod 700 /tmp/git-ssh-login_flask-staging-webonise.sh on 127.0.0.1
+ DEBUG [4389999e] Command: /usr/bin/env chmod 700 /tmp/git-ssh-login_flask-staging-webonise.sh
+  INFO [4389999e] Finished in 0.007 seconds with exit status 0 (successful).
+  INFO [abaf4d9a] Running /usr/bin/env git ls-remote --heads git@github.com:mayuria-webonise/flask_login.git on 127.0.0.1
+ DEBUG [abaf4d9a] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-login_flask-staging-webonise.sh" ; /usr/bin/env git ls-remote --heads git@github.com:mayuria-webonise/flask_login.git )
+ DEBUG [abaf4d9a] 	e4ad5402f1315e8c29a424b639923623495d18f4	refs/heads/master
+  INFO [abaf4d9a] Finished in 3.191 seconds with exit status 0 (successful).
+  INFO [f849501b] Running /usr/bin/env mkdir -p $HOME/deployed/login_flask/shared $HOME/deployed/login_flask/releases on 127.0.0.1
+ DEBUG [f849501b] Command: /usr/bin/env mkdir -p $HOME/deployed/login_flask/shared $HOME/deployed/login_flask/releases
+  INFO [f849501b] Finished in 0.009 seconds with exit status 0 (successful).
+ DEBUG [5f9f30a5] Running [ -f $HOME/deployed/login_flask/current/REVISION ] on 127.0.0.1
+ DEBUG [5f9f30a5] Command: [ -f $HOME/deployed/login_flask/current/REVISION ]
+ DEBUG [5f9f30a5] Finished in 0.009 seconds with exit status 0 (successful).
+ DEBUG [fba3f6a0] Running /usr/bin/env cat $HOME/deployed/login_flask/current/REVISION 2>/dev/null on 127.0.0.1
+ DEBUG [fba3f6a0] Command: /usr/bin/env cat $HOME/deployed/login_flask/current/REVISION 2>/dev/null
+ DEBUG [fba3f6a0] 	e4ad5402f1315e8c29a424b639923623495d18f4
+ DEBUG [fba3f6a0] Finished in 0.010 seconds with exit status 0 (successful).
+ DEBUG [6c2baec1] Running [ -f $HOME/deployed/login_flask/repo/HEAD ] on 127.0.0.1
+ DEBUG [6c2baec1] Command: [ -f $HOME/deployed/login_flask/repo/HEAD ]
+ DEBUG [6c2baec1] Finished in 0.008 seconds with exit status 0 (successful).
+  INFO The repository mirror is at $HOME/deployed/login_flask/repo
+ DEBUG [438dfdb7] Running if test ! -d $HOME/deployed/login_flask/repo; then echo "Directory does not exist '$HOME/deployed/login_flask/repo'" 1>&2; false; fi on 127.0.0.1
+ DEBUG [438dfdb7] Command: if test ! -d $HOME/deployed/login_flask/repo; then echo "Directory does not exist '$HOME/deployed/login_flask/repo'" 1>&2; false; fi
+ DEBUG [438dfdb7] Finished in 0.006 seconds with exit status 0 (successful).
+  INFO [922c96a1] Running /usr/bin/env git remote update --prune on 127.0.0.1
+ DEBUG [922c96a1] Command: cd $HOME/deployed/login_flask/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-login_flask-staging-webonise.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [922c96a1] 	Fetching origin
+  INFO [922c96a1] Finished in 3.283 seconds with exit status 0 (successful).
+ DEBUG [287cccc5] Running if test ! -d $HOME/deployed/login_flask/repo; then echo "Directory does not exist '$HOME/deployed/login_flask/repo'" 1>&2; false; fi on 127.0.0.1
+ DEBUG [287cccc5] Command: if test ! -d $HOME/deployed/login_flask/repo; then echo "Directory does not exist '$HOME/deployed/login_flask/repo'" 1>&2; false; fi
+ DEBUG [287cccc5] Finished in 0.006 seconds with exit status 0 (successful).
+  INFO [d12b0def] Running /usr/bin/env mkdir -p $HOME/deployed/login_flask/releases/20160902154524 on 127.0.0.1
+ DEBUG [d12b0def] Command: cd $HOME/deployed/login_flask/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-login_flask-staging-webonise.sh" ; /usr/bin/env mkdir -p $HOME/deployed/login_flask/releases/20160902154524 )
+  INFO [d12b0def] Finished in 0.009 seconds with exit status 0 (successful).
+  INFO [534e6c2a] Running /usr/bin/env git archive master | tar -x -f - -C $HOME/deployed/login_flask/releases/20160902154524 on 127.0.0.1
+ DEBUG [534e6c2a] Command: cd $HOME/deployed/login_flask/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-login_flask-staging-webonise.sh" ; /usr/bin/env git archive master | tar -x -f - -C $HOME/deployed/login_flask/releases/20160902154524 )
+  INFO [534e6c2a] Finished in 0.031 seconds with exit status 0 (successful).
+ DEBUG [a7b9ff2f] Running if test ! -d $HOME/deployed/login_flask/repo; then echo "Directory does not exist '$HOME/deployed/login_flask/repo'" 1>&2; false; fi on 127.0.0.1
+ DEBUG [a7b9ff2f] Command: if test ! -d $HOME/deployed/login_flask/repo; then echo "Directory does not exist '$HOME/deployed/login_flask/repo'" 1>&2; false; fi
+ DEBUG [a7b9ff2f] Finished in 0.004 seconds with exit status 0 (successful).
+ DEBUG [299e13a9] Running /usr/bin/env git rev-list --max-count=1 master on 127.0.0.1
+ DEBUG [299e13a9] Command: cd $HOME/deployed/login_flask/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-login_flask-staging-webonise.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [299e13a9] 	e4ad5402f1315e8c29a424b639923623495d18f4
+ DEBUG [299e13a9] Finished in 0.006 seconds with exit status 0 (successful).
+ DEBUG [1b0400c7] Running if test ! -d $HOME/deployed/login_flask/releases/20160902154524; then echo "Directory does not exist '$HOME/deployed/login_flask/releases/20160902154524'" 1>&2; false; fi on 127.0.0.1
+ DEBUG [1b0400c7] Command: if test ! -d $HOME/deployed/login_flask/releases/20160902154524; then echo "Directory does not exist '$HOME/deployed/login_flask/releases/20160902154524'" 1>&2; false; fi
+ DEBUG [1b0400c7] Finished in 0.005 seconds with exit status 0 (successful).
+  INFO [ffac9fb1] Running /usr/bin/env echo "e4ad5402f1315e8c29a424b639923623495d18f4" >> REVISION on 127.0.0.1
+ DEBUG [ffac9fb1] Command: cd $HOME/deployed/login_flask/releases/20160902154524 && /usr/bin/env echo "e4ad5402f1315e8c29a424b639923623495d18f4" >> REVISION
+  INFO [ffac9fb1] Finished in 0.007 seconds with exit status 0 (successful).
+  INFO [e307b785] Running /usr/bin/env ln -s $HOME/deployed/login_flask/releases/20160902154524 $HOME/deployed/login_flask/releases/current on 127.0.0.1
+ DEBUG [e307b785] Command: /usr/bin/env ln -s $HOME/deployed/login_flask/releases/20160902154524 $HOME/deployed/login_flask/releases/current
+  INFO [e307b785] Finished in 0.007 seconds with exit status 0 (successful).
+  INFO [6d642e90] Running /usr/bin/env mv $HOME/deployed/login_flask/releases/current $HOME/deployed/login_flask on 127.0.0.1
+ DEBUG [6d642e90] Command: /usr/bin/env mv $HOME/deployed/login_flask/releases/current $HOME/deployed/login_flask
+  INFO [6d642e90] Finished in 0.007 seconds with exit status 0 (successful).
+  INFO [0ccd7f88] Running cd $HOME/deployed/login_flask/releases/20160902154524 && docker build -t login_flask . on 127.0.0.1
+ DEBUG [0ccd7f88] Command: cd $HOME/deployed/login_flask/releases/20160902154524 && docker build -t login_flask .
+ DEBUG [0ccd7f88] 	Sending build context to Docker daemon 23.55 kB
+ DEBUG [0ccd7f88] 	Step 1 : FROM ubuntu:14.04
+ DEBUG [0ccd7f88] 	 ---> 4a725d3b3b1c
+ DEBUG [0ccd7f88] 	Step 2 : RUN apt-get update && sudo apt-get install -y 								python-pip 								 python 								 mongodb
+ DEBUG [0ccd7f88] 	 ---> Using cache
+ ---> da3bca37004a
+Step 3 : COPY . /app
+ DEBUG [0ccd7f88] 	 ---> Using cache
+ ---> c76b3281e74a
+ DEBUG [0ccd7f88] 	Step 4 : WORKDIR /app
+ DEBUG [0ccd7f88] 	 ---> Using cache
+ ---> e06fc6178d70
+Step 5 : RUN pip install -r requirements.txt
+ DEBUG [0ccd7f88] 	 ---> Using cache
+ ---> 54a7781383eb
+Step 6 : ENTRYPOINT python
+ DEBUG [0ccd7f88] 	 ---> Using cache
+ ---> 5d6452f9de88
+Step 7 : CMD app.py
+ DEBUG [0ccd7f88] 	 ---> Using cache
+ ---> 7376a8247e2e
+ DEBUG [0ccd7f88] 	Successfully built 7376a8247e2e
+  INFO [0ccd7f88] Finished in 0.142 seconds with exit status 0 (successful).
+  INFO [ca557da7] Running docker run --name=login_flask -td -p 5000:5000 login_flask on 127.0.0.1
+ DEBUG [ca557da7] Command: docker run --name=login_flask -td -p 5000:5000 login_flask
+ DEBUG [ca557da7] 	docker: Error response from daemon: Conflict. The name "/login_flask" is already in use by container 8e8620771140ce7348d8d30d86b5270e0f6e406d43d6173d0f6f67fd1328c507. You have to remove (or rename) that container to be able to reuse that name..
+See 'docker run --help'.
