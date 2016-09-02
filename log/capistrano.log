@@ -1,0 +1,36 @@
+# Logfile created on 2016-09-02 19:51:37 +0530 by logger.rb/54072
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-09-02 19:51:37 +0530 cap staging deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [c1925dec] Running /usr/bin/env mkdir -p /tmp as deploy@127.0.0.1
+ DEBUG [c1925dec] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-09-02 19:55:02 +0530 cap staging deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [6fdd6f05] Running /usr/bin/env mkdir -p /tmp as deploy@127.0.0.1
+ DEBUG [6fdd6f05] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-09-02 19:55:21 +0530 cap staging deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [2d35771b] Running /usr/bin/env mkdir -p /tmp as deploy@127.0.0.1
+ DEBUG [2d35771b] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-09-02 20:06:36 +0530 cap staging deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [cccd71f0] Running /usr/bin/env mkdir -p /tmp as deploy@127.0.0.1
+ DEBUG [cccd71f0] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-09-02 20:09:39 +0530 cap staging deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [4512d0d9] Running /usr/bin/env mkdir -p /tmp as deploy@127.0.0.1
+ DEBUG [4512d0d9] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-09-02 20:46:15 +0530 cap staging deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [08fc9b86] Running /usr/bin/env mkdir -p /tmp as deploy@127.0.0.1
+ DEBUG [08fc9b86] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-09-02 20:57:15 +0530 cap staging deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [345f0a8c] Running /usr/bin/env mkdir -p /tmp as deploy@127.0.0.1
+ DEBUG [345f0a8c] Command: /usr/bin/env mkdir -p /tmp
