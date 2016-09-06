@@ -518,3 +518,253 @@ Step 7 : CMD app.py
  DEBUG [ca557da7] Command: docker run --name=login_flask -td -p 5000:5000 login_flask
  DEBUG [ca557da7] 	docker: Error response from daemon: Conflict. The name "/login_flask" is already in use by container 8e8620771140ce7348d8d30d86b5270e0f6e406d43d6173d0f6f67fd1328c507. You have to remove (or rename) that container to be able to reuse that name..
 See 'docker run --help'.
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-09-02 21:16:16 +0530 cap staging deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [9f0b9c68] Running /usr/bin/env mkdir -p /tmp on 127.0.0.1
+ DEBUG [9f0b9c68] Command: /usr/bin/env mkdir -p /tmp
+  INFO [9f0b9c68] Finished in 0.195 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-login_flask-staging-webonise.sh 0.0%
+  INFO Uploading /tmp/git-ssh-login_flask-staging-webonise.sh 100.0%
+  INFO [e65e2d4e] Running /usr/bin/env chmod 700 /tmp/git-ssh-login_flask-staging-webonise.sh on 127.0.0.1
+ DEBUG [e65e2d4e] Command: /usr/bin/env chmod 700 /tmp/git-ssh-login_flask-staging-webonise.sh
+  INFO [e65e2d4e] Finished in 0.007 seconds with exit status 0 (successful).
+  INFO [8103fa2a] Running /usr/bin/env git ls-remote --heads git@github.com:mayuria-webonise/flask_login.git on 127.0.0.1
+ DEBUG [8103fa2a] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-login_flask-staging-webonise.sh" ; /usr/bin/env git ls-remote --heads git@github.com:mayuria-webonise/flask_login.git )
+ DEBUG [8103fa2a] 	fa6c1fa358a4bc74fb126463636d0948d089d235	refs/heads/master
+  INFO [8103fa2a] Finished in 3.302 seconds with exit status 0 (successful).
+  INFO [39d73d3c] Running /usr/bin/env mkdir -p $HOME/deployed/login_flask/shared $HOME/deployed/login_flask/releases on 127.0.0.1
+ DEBUG [39d73d3c] Command: /usr/bin/env mkdir -p $HOME/deployed/login_flask/shared $HOME/deployed/login_flask/releases
+  INFO [39d73d3c] Finished in 0.012 seconds with exit status 0 (successful).
+ DEBUG [346953b3] Running [ -f $HOME/deployed/login_flask/current/REVISION ] on 127.0.0.1
+ DEBUG [346953b3] Command: [ -f $HOME/deployed/login_flask/current/REVISION ]
+ DEBUG [346953b3] Finished in 0.007 seconds with exit status 0 (successful).
+ DEBUG [fe55ad13] Running /usr/bin/env cat $HOME/deployed/login_flask/current/REVISION 2>/dev/null on 127.0.0.1
+ DEBUG [fe55ad13] Command: /usr/bin/env cat $HOME/deployed/login_flask/current/REVISION 2>/dev/null
+ DEBUG [fe55ad13] 	e4ad5402f1315e8c29a424b639923623495d18f4
+ DEBUG [fe55ad13] Finished in 0.011 seconds with exit status 0 (successful).
+ DEBUG [ca44108d] Running [ -f $HOME/deployed/login_flask/repo/HEAD ] on 127.0.0.1
+ DEBUG [ca44108d] Command: [ -f $HOME/deployed/login_flask/repo/HEAD ]
+ DEBUG [ca44108d] Finished in 0.010 seconds with exit status 0 (successful).
+  INFO The repository mirror is at $HOME/deployed/login_flask/repo
+ DEBUG [8961f2f8] Running if test ! -d $HOME/deployed/login_flask/repo; then echo "Directory does not exist '$HOME/deployed/login_flask/repo'" 1>&2; false; fi on 127.0.0.1
+ DEBUG [8961f2f8] Command: if test ! -d $HOME/deployed/login_flask/repo; then echo "Directory does not exist '$HOME/deployed/login_flask/repo'" 1>&2; false; fi
+ DEBUG [8961f2f8] Finished in 0.006 seconds with exit status 0 (successful).
+  INFO [a5c5aa67] Running /usr/bin/env git remote update --prune on 127.0.0.1
+ DEBUG [a5c5aa67] Command: cd $HOME/deployed/login_flask/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-login_flask-staging-webonise.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [a5c5aa67] 	Fetching origin
+ DEBUG [a5c5aa67] 	From github.com:mayuria-webonise/flask_login
+   e4ad540..fa6c1fa  master     -> master
+  INFO [a5c5aa67] Finished in 3.927 seconds with exit status 0 (successful).
+ DEBUG [212ae093] Running if test ! -d $HOME/deployed/login_flask/repo; then echo "Directory does not exist '$HOME/deployed/login_flask/repo'" 1>&2; false; fi on 127.0.0.1
+ DEBUG [212ae093] Command: if test ! -d $HOME/deployed/login_flask/repo; then echo "Directory does not exist '$HOME/deployed/login_flask/repo'" 1>&2; false; fi
+ DEBUG [212ae093] Finished in 0.007 seconds with exit status 0 (successful).
+  INFO [5e3b68ee] Running /usr/bin/env mkdir -p $HOME/deployed/login_flask/releases/20160902154620 on 127.0.0.1
+ DEBUG [5e3b68ee] Command: cd $HOME/deployed/login_flask/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-login_flask-staging-webonise.sh" ; /usr/bin/env mkdir -p $HOME/deployed/login_flask/releases/20160902154620 )
+  INFO [5e3b68ee] Finished in 0.010 seconds with exit status 0 (successful).
+  INFO [dd05637c] Running /usr/bin/env git archive master | tar -x -f - -C $HOME/deployed/login_flask/releases/20160902154620 on 127.0.0.1
+ DEBUG [dd05637c] Command: cd $HOME/deployed/login_flask/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-login_flask-staging-webonise.sh" ; /usr/bin/env git archive master | tar -x -f - -C $HOME/deployed/login_flask/releases/20160902154620 )
+  INFO [dd05637c] Finished in 0.010 seconds with exit status 0 (successful).
+ DEBUG [3eb00bde] Running if test ! -d $HOME/deployed/login_flask/repo; then echo "Directory does not exist '$HOME/deployed/login_flask/repo'" 1>&2; false; fi on 127.0.0.1
+ DEBUG [3eb00bde] Command: if test ! -d $HOME/deployed/login_flask/repo; then echo "Directory does not exist '$HOME/deployed/login_flask/repo'" 1>&2; false; fi
+ DEBUG [3eb00bde] Finished in 0.004 seconds with exit status 0 (successful).
+ DEBUG [748dcea5] Running /usr/bin/env git rev-list --max-count=1 master on 127.0.0.1
+ DEBUG [748dcea5] Command: cd $HOME/deployed/login_flask/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-login_flask-staging-webonise.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [748dcea5] 	fa6c1fa358a4bc74fb126463636d0948d089d235
+ DEBUG [748dcea5] Finished in 0.006 seconds with exit status 0 (successful).
+ DEBUG [36002f68] Running if test ! -d $HOME/deployed/login_flask/releases/20160902154620; then echo "Directory does not exist '$HOME/deployed/login_flask/releases/20160902154620'" 1>&2; false; fi on 127.0.0.1
+ DEBUG [36002f68] Command: if test ! -d $HOME/deployed/login_flask/releases/20160902154620; then echo "Directory does not exist '$HOME/deployed/login_flask/releases/20160902154620'" 1>&2; false; fi
+ DEBUG [36002f68] Finished in 0.005 seconds with exit status 0 (successful).
+  INFO [5cc03f92] Running /usr/bin/env echo "fa6c1fa358a4bc74fb126463636d0948d089d235" >> REVISION on 127.0.0.1
+ DEBUG [5cc03f92] Command: cd $HOME/deployed/login_flask/releases/20160902154620 && /usr/bin/env echo "fa6c1fa358a4bc74fb126463636d0948d089d235" >> REVISION
+  INFO [5cc03f92] Finished in 0.008 seconds with exit status 0 (successful).
+  INFO [1ec415e7] Running /usr/bin/env ln -s $HOME/deployed/login_flask/releases/20160902154620 $HOME/deployed/login_flask/releases/current on 127.0.0.1
+ DEBUG [1ec415e7] Command: /usr/bin/env ln -s $HOME/deployed/login_flask/releases/20160902154620 $HOME/deployed/login_flask/releases/current
+  INFO [1ec415e7] Finished in 0.007 seconds with exit status 0 (successful).
+  INFO [350c98fc] Running /usr/bin/env mv $HOME/deployed/login_flask/releases/current $HOME/deployed/login_flask on 127.0.0.1
+ DEBUG [350c98fc] Command: /usr/bin/env mv $HOME/deployed/login_flask/releases/current $HOME/deployed/login_flask
+  INFO [350c98fc] Finished in 0.006 seconds with exit status 0 (successful).
+  INFO [76d05941] Running cd $HOME/deployed/login_flask/releases/20160902154620 && docker build -t login_flask . on 127.0.0.1
+ DEBUG [76d05941] Command: cd $HOME/deployed/login_flask/releases/20160902154620 && docker build -t login_flask .
+ DEBUG [76d05941] 	Sending build context to Docker daemon 65.02 kB
+ DEBUG [76d05941] 	Step 1 : FROM ubuntu:14.04
+ DEBUG [76d05941] 	 ---> 4a725d3b3b1c
+ DEBUG [76d05941] 	Step 2 : RUN apt-get update && sudo apt-get install -y 								python-pip 								 python 								 mongodb
+ DEBUG [76d05941] 	 ---> Using cache
+ ---> da3bca37004a
+Step 3 : COPY . /app
+ DEBUG [76d05941] 	 ---> 884f1cad4000
+ DEBUG [76d05941] 	Removing intermediate container 0e9908e00e68
+Step 4 : WORKDIR /app
+ DEBUG [76d05941] 	 ---> Running in e5b58e7c0ee3
+ DEBUG [76d05941] 	 ---> 8bf987ffb078
+ DEBUG [76d05941] 	Removing intermediate container e5b58e7c0ee3
+Step 5 : RUN pip install -r requirements.txt
+ DEBUG [76d05941] 	 ---> Running in 3fa2be2216ad
+ DEBUG [76d05941] 	Downloading/unpacking click==6.6 (from -r requirements.txt (line 1))
+ DEBUG [76d05941] 	  Running setup.py (path:/tmp/pip_build_root/click/setup.py) egg_info for package click
+ DEBUG [76d05941] 	    
+ DEBUG [76d05941] 	    warning: no previously-included files matching '*.pyc' found under directory 'docs'
+ DEBUG [76d05941] 	    warning: no previously-included files matching '*.pyo' found under directory 'docs'
+    warning: no previously-included files matching '*.pyc' found under directory 'tests'
+    warning: no previously-included files matching '*.pyo' found under directory 'tests'
+    warning: no previously-included files matching '*.pyc' found under directory 'examples'
+ DEBUG [76d05941] 	    warning: no previously-included files matching '*.pyo' found under directory 'examples'
+ DEBUG [76d05941] 	    no previously-included directories found matching 'docs/_build'
+ DEBUG [76d05941] 	Downloading/unpacking Flask==0.11.1 (from -r requirements.txt (line 2))
+ DEBUG [76d05941] 	Downloading/unpacking itsdangerous==0.24 (from -r requirements.txt (line 3))
+ DEBUG [76d05941] 	  Running setup.py (path:/tmp/pip_build_root/itsdangerous/setup.py) egg_info for package itsdangerous
+ DEBUG [76d05941] 	    
+ DEBUG [76d05941] 	    warning: no previously-included files matching '*' found under directory 'docs/_build'
+ DEBUG [76d05941] 	Downloading/unpacking Jinja2==2.8 (from -r requirements.txt (line 4))
+ DEBUG [76d05941] 	Downloading/unpacking MarkupSafe==0.23 (from -r requirements.txt (line 5))
+ DEBUG [76d05941] 	  Downloading MarkupSafe-0.23.tar.gz
+ DEBUG [76d05941] 	  Running setup.py (path:/tmp/pip_build_root/MarkupSafe/setup.py) egg_info for package MarkupSafe
+ DEBUG [76d05941] 	    
+ DEBUG [76d05941] 	Downloading/unpacking pymongo==3.3.0 (from -r requirements.txt (line 6))
+ DEBUG [76d05941] 	  Running setup.py (path:/tmp/pip_build_root/pymongo/setup.py) egg_info for package pymongo
+ DEBUG [76d05941] 	    
+ DEBUG [76d05941] 	Downloading/unpacking Werkzeug==0.11.11 (from -r requirements.txt (line 7))
+ DEBUG [76d05941] 	Installing collected packages: click, Flask, itsdangerous, Jinja2, MarkupSafe, pymongo, Werkzeug
+  Running setup.py install for click
+ DEBUG [76d05941] 	    
+ DEBUG [76d05941] 	    warning: no previously-included files matching '*.pyc' found under directory 'docs'
+ DEBUG [76d05941] 	    warning: no previously-included files matching '*.pyo' found under directory 'docs'
+    warning: no previously-included files matching '*.pyc' found under directory 'tests'
+ DEBUG [76d05941] 	    warning: no previously-included files matching '*.pyo' found under directory 'tests'
+ DEBUG [76d05941] 	    warning: no previously-included files matching '*.pyc' found under directory 'examples'
+    warning: no previously-included files matching '*.pyo' found under directory 'examples'
+ DEBUG [76d05941] 	    no previously-included directories found matching 'docs/_build'
+ DEBUG [76d05941] 	  Running setup.py install for itsdangerous
+ DEBUG [76d05941] 	    
+ DEBUG [76d05941] 	    warning: no previously-included files matching '*' found under directory 'docs/_build'
+ DEBUG [76d05941] 	  Running setup.py install for MarkupSafe
+ DEBUG [76d05941] 	    
+ DEBUG [76d05941] 	    building 'markupsafe._speedups' extension
+ DEBUG [76d05941] 	    x86_64-linux-gnu-gcc -pthread -fno-strict-aliasing -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -fPIC -I/usr/include/python2.7 -c markupsafe/_speedups.c -o build/temp.linux-x86_64-2.7/markupsafe/_speedups.o
+ DEBUG [76d05941] 	    markupsafe/_speedups.c:12:20: fatal error: Python.h: No such file or directory
+     #include <Python.h>
+                        ^
+    compilation terminated.
+ DEBUG [76d05941] 	    ==========================================================================
+    WARNING: The C extension could not be compiled, speedups are not enabled.
+    Failure information, if any, is above.
+    Retrying the build without the C extension now.
+ DEBUG [76d05941] 	    
+ DEBUG [76d05941] 	    
+ DEBUG [76d05941] 	    ==========================================================================
+    WARNING: The C extension could not be compiled, speedups are not enabled.
+    Plain-Python installation succeeded.
+    ==========================================================================
+ DEBUG [76d05941] 	  Running setup.py install for pymongo
+ DEBUG [76d05941] 	    building 'bson._cbson' extension
+ DEBUG [76d05941] 	    x86_64-linux-gnu-gcc -pthread -fno-strict-aliasing -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -fPIC -Ibson -I/usr/include/python2.7 -c bson/_cbsonmodule.c -o build/temp.linux-x86_64-2.7/bson/_cbsonmodule.o
+ DEBUG [76d05941] 	    bson/_cbsonmodule.c:23:20: fatal error: Python.h: No such file or directory
+     #include "Python.h"
+                        ^
+    compilation terminated.
+ DEBUG [76d05941] 	    /tmp/pip_build_root/pymongo/setup.py:225: UserWarning:
+    ********************************************************************
+ DEBUG [76d05941] 	    WARNING: The bson._cbson extension module could not
+    be compiled. No C extensions are essential for PyMongo to run,
+ DEBUG [76d05941] 	    although they do result in significant speed improvements.
+    The output above this warning shows how the compilation failed.
+    
+    Please see the installation docs for solutions to build issues:
+    
+ DEBUG [76d05941] 	    http://api.mongodb.org/python/current/installation.html
+    
+ DEBUG [76d05941] 	    Here are some hints for popular operating systems:
+ DEBUG [76d05941] 	    
+ DEBUG [76d05941] 	    If you are seeing this message on Linux you probably need to
+ DEBUG [76d05941] 	    install GCC and/or the Python development package for your
+ DEBUG [76d05941] 	    version of Python.
+ DEBUG [76d05941] 	    
+ DEBUG [76d05941] 	    Debian and Ubuntu users should issue the following command:
+    
+ DEBUG [76d05941] 	        $ sudo apt-get install build-essential python-dev
+ DEBUG [76d05941] 	    
+ DEBUG [76d05941] 	    Users of Red Hat based distributions (RHEL, CentOS, Amazon Linux,
+ DEBUG [76d05941] 	    Oracle Linux, Fedora, etc.) should issue the following command:
+    
+        $ sudo yum install gcc python-devel
+ DEBUG [76d05941] 	    
+    If you are seeing this message on Microsoft Windows please install
+    PyMongo using the MS Windows installer for your version of Python,
+    available on pypi here:
+    
+    http://pypi.python.org/pypi/pymongo/#downloads
+ DEBUG [76d05941] 	    
+    If you are seeing this message on OSX please read the documentation
+    here:
+    
+    http://api.mongodb.org/python/current/installation.html#osx
+ DEBUG [76d05941] 	    ********************************************************************
+    
+      "The output above "
+    command 'x86_64-linux-gnu-gcc' failed with exit status 1
+    building 'pymongo._cmessage' extension
+    x86_64-linux-gnu-gcc -pthread -fno-strict-aliasing -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -fPIC -Ibson -I/usr/include/python2.7 -c pymongo/_cmessagemodule.c -o build/temp.linux-x86_64-2.7/pymongo/_cmessagemodule.o
+ DEBUG [76d05941] 	    pymongo/_cmessagemodule.c:23:20: fatal error: Python.h: No such file or directory
+     #include "Python.h"
+                        ^
+    compilation terminated.
+ DEBUG [76d05941] 	    /tmp/pip_build_root/pymongo/setup.py:225: UserWarning:
+    ********************************************************************
+    WARNING: The pymongo._cmessage extension module could not
+    be compiled. No C extensions are essential for PyMongo to run,
+    although they do result in significant speed improvements.
+    The output above this warning shows how the compilation failed.
+    
+    Please see the installation docs for solutions to build issues:
+    
+    http://api.mongodb.org/python/current/installation.html
+    
+    Here are some hints for popular operating systems:
+    
+    If you are seeing this message on Linux you probably need to
+    install GCC and/or the Python development package for your
+    version of Python.
+    
+    Debian and Ubuntu users should issue the following command:
+    
+        $ sudo apt-get install build-essential python-dev
+    
+    Users of Red Hat based distributions (RHEL, CentOS, Amazon Linux,
+    Oracle Linux, Fedora, etc.) should issue the following command:
+ DEBUG [76d05941] 	    
+        $ sudo yum install gcc python-devel
+ DEBUG [76d05941] 	    
+ DEBUG [76d05941] 	    If you are seeing this message on Microsoft Windows please install
+ DEBUG [76d05941] 	    PyMongo using the MS Windows installer for your version of Python,
+ DEBUG [76d05941] 	    available on pypi here:
+ DEBUG [76d05941] 	    
+ DEBUG [76d05941] 	    http://pypi.python.org/pypi/pymongo/#downloads
+ DEBUG [76d05941] 	    
+ DEBUG [76d05941] 	    If you are seeing this message on OSX please read the documentation
+ DEBUG [76d05941] 	    here:
+ DEBUG [76d05941] 	    
+ DEBUG [76d05941] 	    http://api.mongodb.org/python/current/installation.html#osx
+ DEBUG [76d05941] 	    ********************************************************************
+ DEBUG [76d05941] 	    
+ DEBUG [76d05941] 	      "The output above "
+ DEBUG [76d05941] 	    command 'x86_64-linux-gnu-gcc' failed with exit status 1
+ DEBUG [76d05941] 	    
+ DEBUG [76d05941] 	Successfully installed click Flask itsdangerous Jinja2 MarkupSafe pymongo Werkzeug
+Cleaning up...
+ DEBUG [76d05941] 	 ---> 1602f9a41ad8
+ DEBUG [76d05941] 	Removing intermediate container 3fa2be2216ad
+Step 6 : ENTRYPOINT python
+ DEBUG [76d05941] 	 ---> Running in 5776dd070215
+ DEBUG [76d05941] 	 ---> 6a41ed57a318
+ DEBUG [76d05941] 	Removing intermediate container 5776dd070215
+Step 7 : CMD app.py
+ DEBUG [76d05941] 	 ---> Running in 27ffd92c576a
+ DEBUG [76d05941] 	 ---> 06087e0a95a5
+ DEBUG [76d05941] 	Removing intermediate container 27ffd92c576a
+ DEBUG [76d05941] 	Successfully built 06087e0a95a5
+  INFO [76d05941] Finished in 46.396 seconds with exit status 0 (successful).
+  INFO [ec748c6e] Running docker run --name=login_flask -td -p 5000:5000 login_flask on 127.0.0.1
+ DEBUG [ec748c6e] Command: docker run --name=login_flask -td -p 5000:5000 login_flask
+ DEBUG [ec748c6e] 	docker: Error response from daemon: Conflict. The name "/login_flask" is already in use by container 8e8620771140ce7348d8d30d86b5270e0f6e406d43d6173d0f6f67fd1328c507. You have to remove (or rename) that container to be able to reuse that name..
+See 'docker run --help'.
